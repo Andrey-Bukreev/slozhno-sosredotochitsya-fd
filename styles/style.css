@@ -219,7 +219,7 @@ padding: 10px;
   justify-content: center;
   font-family: var(--font-default);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  font-weight: 700;;
+  font-weight: 700;
   line-height: 83%;
   color: var(--heading-decor-color);
   text-shadow: 4px 4px 0 var(--accent-color);
@@ -235,7 +235,7 @@ padding: 10px;
   }
 
   .header {
-    min-height: 1024px;;
+    min-height: 1024px;
     align-items: center;
   }
 
@@ -303,7 +303,6 @@ padding: 10px;
 
   .gallery {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     
@@ -422,7 +421,6 @@ padding: 10px;
 
   .gallery {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     
