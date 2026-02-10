@@ -352,6 +352,7 @@ background-attachment: fixed;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     background-color: var(--bg-color);
+    padding-bottom: 30px;
     
   }
 
@@ -514,6 +515,7 @@ background-attachment: fixed;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    padding-bottom: 40px;
   }
 
   .gallery > .card-heading {
@@ -544,6 +546,20 @@ background-attachment: fixed;
 
   .pseudo-heaader {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
+ .corner-right-footer {
+    top: 20px;
+    right: 20px;
+    border-top: 1px solid var(--accent-color);
+    border-right: 1px solid var(--accent-color);
+  }
+
+  .corner-left-footer {
+    left: 20px;
+    bottom: 20px;
+    border-bottom: 1px solid var(--accent-color);
+    border-left: 1px solid var(--accent-color);
   }
 
 }
