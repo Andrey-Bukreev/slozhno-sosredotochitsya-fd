@@ -122,12 +122,17 @@ background-attachment: fixed;
 }
 
 .main {
+  padding: 10px;
+  background-color: var(--bg-color);
+}
+
+.content {
   font-family: var(--font-default);
   background-color: var(--bg-color);
   display: grid;
   grid-template-rows: 1fr;
   gap: 50px;
-  padding: 10px 10px 45px 10px;
+  padding-bottom: 45px;
 }
 
 .content-wrapper-start {
@@ -188,7 +193,6 @@ background-attachment: fixed;
 }
 
 .heading-gallery {
-  margin: 0 10px;
   margin-bottom: 10px;
 }
 
@@ -196,7 +200,6 @@ background-attachment: fixed;
   display: grid;
   grid-template-rows: 1fr;
   gap: 10px;
-  padding: 0 10px;
   background-color: var(--bg-color);
   
 }
@@ -212,7 +215,6 @@ background-attachment: fixed;
 }
 
 .footer {
-  margin-top: 50px;
   height: 100vh;
   min-height: 688px;
   align-content: center;
@@ -237,13 +239,14 @@ background-attachment: fixed;
 }
 
 .pseudo-heaader {
+  display: flex;
   font-family: var(--font-default);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: 700;
   line-height: 83%;
   color: var(--heading-decor-color);
+  justify-self: center;
 }
-
 
 /*768*/
 
@@ -274,13 +277,27 @@ background-attachment: fixed;
     right: 30px;
   }
 
-  .left-corner {
-    bottom: 40px;
+ .corner-right {
+    top: 20px;
+    right: 20px;
+    border-top: 1px solid var(--accent-color);
+    border-right: 1px solid var(--accent-color);
+  }
+
+.corner-left {
+    left: 20px;
+    bottom: 20px;
+    border-bottom: 1px solid var(--accent-color);
+    border-left: 1px solid var(--accent-color);
   }
 
   .main {
+    padding: 20px;
+  }
+
+  .content {
     gap: 80px;
-    padding: 30px 20px 80px; 
+    padding: 10px 0px 80px; 
   }
 
   .content-wrapper-start {
@@ -327,14 +344,14 @@ background-attachment: fixed;
   }
 
   .heading-gallery {
-    margin: 0 20px 20px;
+    margin: 0 0 20px;
   }
 
   .gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    padding: 0 20px;
+    background-color: var(--bg-color);
     
   }
 
@@ -357,6 +374,7 @@ background-attachment: fixed;
   .gallery-item:nth-child(5) {
     grid-column: -3 / -1;
   }
+
   .gallery-image {
     inline-size: 100%;
     block-size: 100%;
@@ -365,27 +383,30 @@ background-attachment: fixed;
   }
 
   .footer {
+    height: 100vh;
     max-height: 1024px;
     position: relative;
   }
 
   .corner-right-footer {
-  top: 10px;
-  right: 10px;
-  border-top: 1px solid var(--accent-color);
-  border-right: 1px solid var(--accent-color);
+    top: 20px;
+    right: 20px;
+    border-top: 1px solid var(--accent-color);
+    border-right: 1px solid var(--accent-color);
 }
 
   .corner-left-footer {
-    left: 10px;
-    bottom: 10px;
+    left: 20px;
+    bottom: 20px;
     border-bottom: 1px solid var(--accent-color);
     border-left: 1px solid var(--accent-color);
     
   }
   
   .pseudo-heaader {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    display: flex;
+    justify-self: center;
+    align-self: center;
   }
 
 }
@@ -394,7 +415,7 @@ background-attachment: fixed;
 
 @media screen and (min-width: 1024px) {
 
-    .header {
+  .header {
     min-height: 768px;
   }
 
@@ -404,13 +425,27 @@ background-attachment: fixed;
     padding: 0px;
   }
 
+  .decorated-zone {
+    padding: 20px 20px 20px 0px;
+  }
+
   .record {
     top: 20px;
     right: 30px;
   }
 
-  .left-corner {
-    bottom: 40px;
+ .corner-right {
+    top: 20px;
+    right: 20px;
+    border-top: 1px solid var(--accent-color);
+    border-right: 1px solid var(--accent-color);
+  }
+
+  .corner-left {
+    left: 20px;
+    bottom: 20px;
+    border-bottom: 1px solid var(--accent-color);
+    border-left: 1px solid var(--accent-color);
   }
 
   .page-heading {
@@ -419,11 +454,16 @@ background-attachment: fixed;
 
    .header > .paragraph {
     max-width: 491px;
+    max-height: 71px;
     justify-self: end;
   }
 
+  .main {
+    padding: 20px;
+  }
+
   .content {
-    padding: 60px 20px 80px;
+    padding: 10px 0px 80px;
     gap: 80px;
   }
 
@@ -474,7 +514,6 @@ background-attachment: fixed;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    
   }
 
   .gallery > .card-heading {
