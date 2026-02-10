@@ -17,7 +17,6 @@ background-attachment: fixed;
   padding: 0px 0px 0px;
   position: relative;
   gap: 30px;
-  padding: 10px;
 }
 
 .header__theme-menu-list {
@@ -352,12 +351,12 @@ background-attachment: fixed;
     max-height: 1024px;
   }
 
-  .right-corner {
+  .pseudo-heaader-right-corner {
     top: 20px;
     right: 20px;
   }
 
-  .left-corner {
+  .pseudo-heaader-left-corner {
     bottom: 20px;
     left: 20px;
   }
