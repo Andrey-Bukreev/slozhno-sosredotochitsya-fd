@@ -19,6 +19,10 @@ background-attachment: fixed;
   gap: 30px;
 }
 
+.decorated-zone {
+  padding: 10px;
+}
+
 .header__theme-menu-list {
   display: grid;
   gap: 10px;
@@ -48,15 +52,26 @@ background-attachment: fixed;
 }
 
 
-.right-corner {
+.corner {
   box-sizing: border-box;
   width: 25px;
   height: 25px;
-  border-top: 1px solid var(--accent-color);
-  border-right: 1px solid var(--accent-color);
   position: absolute;
+}
+
+.corner-right {
   top: 10px;
   right: 10px;
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+}
+
+.corner-left {
+  left: 10px;
+  bottom: 10px;
+  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
+  
 }
 
 .record {
@@ -81,17 +96,6 @@ background-attachment: fixed;
   background-color: var(--accent-color);
   border-radius: 50%;
   box-shadow: 0px 0px 4px 2px var(--accent-color);
-}
-
-.left-corner {
-  box-sizing: border-box;
-  width: 25px;
-  height: 25px;
-  border-bottom: 1px solid var(--accent-color);
-  border-left: 1px solid var(--accent-color);
-  position: absolute;
-  left: 10px;
-  bottom: 10px;
 }
 
 .page-heading {
@@ -193,6 +197,7 @@ background-attachment: fixed;
   grid-template-rows: 1fr;
   gap: 10px;
   padding: 0 10px;
+  background-color: var(--bg-color);
   
 }
 
@@ -202,7 +207,6 @@ background-attachment: fixed;
 
 .gallery-image {
   inline-size: 100%;
-  block-size: 100%;
   max-block-size: 100%;
   object-fit: cover;
 }
@@ -214,12 +218,25 @@ background-attachment: fixed;
   align-content: center;
   position: relative;
   background-color: var(--bg-color);
+  padding: 10px;
+}
+
+.corner-right-footer {
+  top: 10px;
+  right: 10px;
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+}
+
+.corner-left-footer {
+  left: 10px;
+  bottom: 10px;
+  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
+  
 }
 
 .pseudo-heaader {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-family: var(--font-default);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: 700;
@@ -349,16 +366,22 @@ background-attachment: fixed;
 
   .footer {
     max-height: 1024px;
+    position: relative;
   }
 
-  .pseudo-heaader-right-corner {
-    top: 20px;
-    right: 20px;
-  }
+  .corner-right-footer {
+  top: 10px;
+  right: 10px;
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+}
 
-  .pseudo-heaader-left-corner {
-    bottom: 20px;
-    left: 20px;
+  .corner-left-footer {
+    left: 10px;
+    bottom: 10px;
+    border-bottom: 1px solid var(--accent-color);
+    border-left: 1px solid var(--accent-color);
+    
   }
   
   .pseudo-heaader {
