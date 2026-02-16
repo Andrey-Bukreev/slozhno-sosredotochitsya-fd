@@ -3,10 +3,19 @@
   и их переопределение под различные устройства
 */
 :root {
-  --font-default: 'IBM Plex mono','Arial', sans-serif;
+  --font-default: 'IBM Plex mono','Arial', monospace;
   --font-size-text: 18px;
   --line-heignt-text: 23.4px;
   --font-weight-default: 400;
   --font-weight-accent: 700;
+
+  --bg-image: url('/images/cover-image-light.png');
+  --bg-color: #FFF1F7;
+  --font-color: #353430;
+  --heading-decor-color: #FFC2E6;
+  --heading-accent: #353430;
+  --heading-color: #353430;
+  --accent-color: #FF8DCB;
+  --color-record: transparent;
 
 }

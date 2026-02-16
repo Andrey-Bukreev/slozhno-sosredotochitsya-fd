@@ -13,8 +13,8 @@
   --bg-color: #000028;
   --font-color: #F1B2CE;
   --heading-decor-color: #DB00FF;
-  --h2-color:#FF0070;
-  --h3-color: #000028;
-  --h4-color: #000028;
+  --heading-accent:#FF0070;
+  --heading-color: #000028;
   --accent-color: #FF0070;
+  --color-record: #FF0070;
 }
