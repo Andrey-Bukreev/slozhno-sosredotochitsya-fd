@@ -13,8 +13,9 @@
   --bg-color: #FFF1F7;
   --font-color: #353430;
   --heading-decor-color: #FFC2E6;
-  --heading-accent: #353430;
   --heading-color: #353430;
-  --accent-color: #FF8DCB;
+  --accent-color-primary: #FF8DCB;
+  --accent-color-secondary: #353430;
   --color-record: transparent;
+  --color-button: #353430;
 }
