@@ -204,13 +204,13 @@ background-attachment: fixed;
   text-shadow: 2px 2px 0 var(--accent-color-primary);
 }
 
-.link:hover{
+.link:hover {
   text-shadow: 2px 2px 0 var(--accent-color-primary);
   border-bottom: 2px solid var(--font-color);
   
 }
 
-.link:hover:focus{
+.link:hover:focus {
   text-shadow: 2px 2px 0 var(--accent-color-primary);
   border: 2px solid var(--font-color);
   
@@ -518,12 +518,8 @@ background-attachment: fixed;
 
   .footer {
     max-height: 768px;
-  }
-  
-  .footer {
     padding: 20px;
   }
-
   .pseudo-header {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
