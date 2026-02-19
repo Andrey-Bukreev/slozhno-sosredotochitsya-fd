@@ -80,11 +80,11 @@ background-attachment: fixed;
   border: 1px solid rgb(var(--color-button),0.4);
 }
 
-.header__theme-menu-button:focus {
+.header__theme-menu-button:focus-visible {
   border-bottom: 1px solid rgb(var(--color-button));
 }
 
-.header__theme-menu-button:focus:hover {
+.header__theme-menu-button:focus-visible:hover {
   border-top: none;
   border-right: none;
   border-left: none;
@@ -212,7 +212,7 @@ background-attachment: fixed;
   
 }
 
-.link:hover:focus {
+.link:hover:focus-visible {
   text-shadow: 2px 2px 0 var(--accent-color-primary);
   border: 2px solid var(--font-color);
   
@@ -305,7 +305,7 @@ background-attachment: fixed;
 
   .content {
     gap: 80px;
-    padding: 10px 0px 80px; 
+    padding: 10px 0px 80px;
   }
 
   .content-wrapper-start {
