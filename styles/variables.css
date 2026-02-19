@@ -9,15 +9,22 @@
   --font-weight-default: 400;
   --font-weight-accent: 700;
 
-  --bg-image: url('../images/cover-image-light.png');
-  --bg-color: #FFF1F7;
-  --font-color: #353430;
-  --heading-decor-color: #FFC2E6;
+  --bg-image: url('../images/cover-image-dark.png');
+   --bg-color: #000028;
+  --font-color: #F1B2CE;
+  --heading-decor-color: #DB00FF;
 
-  --heading-color: #353430;
-  --accent-color-secondary: #353430;
-  --accent-color-primary: #FF8DCB;
-  --color-record: transparent;
-  --color-button: 53, 52, 48;
+  --heading-color: #000028;
+  --accent-color-primary: #FF0070;
+  --accent-color-secondary:#FF0070;
+  --color-record: #FF0070;
+  --color-button: 255, 0, 112;
+
+  
+ 
+  
+  
+  
+  
 
 }
