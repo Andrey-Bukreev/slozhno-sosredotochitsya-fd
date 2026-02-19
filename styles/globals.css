@@ -46,6 +46,3 @@ button:focus-visible {
     outline: none;
 }
 
-a:-webkit-any-link:focus-visible {
-    outline-offset: 1px;
-}
