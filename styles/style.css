@@ -209,13 +209,16 @@ background-attachment: fixed;
 .link:hover {
   text-shadow: 2px 2px 0 var(--accent-color-primary);
   border-bottom: 2px solid var(--font-color);
-  
 }
 
-.link:hover:focus-visible {
+.link:hover:focus {
   text-shadow: 2px 2px 0 var(--accent-color-primary);
-  border: 2px solid var(--font-color);
-  
+  border: 1px solid var(--font-color); 
+}
+
+.link:focus-visible {
+  outline: none;
+  border: 1px solid var(--font-color); 
 }
 
 .gallery {
@@ -291,7 +294,6 @@ background-attachment: fixed;
   .header > .paragraph {
     max-width: 364px;
     justify-self: end;
-
   }
 
   .record {
