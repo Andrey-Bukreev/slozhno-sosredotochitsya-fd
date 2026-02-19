@@ -9,7 +9,7 @@
   --font-weight-default: 400;
   --font-weight-accent: 700;
 
-  --bg-image: url('/images/cover-image-light.png');
+  --bg-image: url('../images/cover-image-light.png');
   --bg-color: #FFF1F7;
   --font-color: #353430;
   --heading-decor-color: #FFC2E6;

@@ -15,7 +15,7 @@ background-attachment: fixed;
   display: grid;
   grid-template-rows: 1fr 193px 1fr;
   height: 100vh;
-  max-height: 668px;
+  min-height: 668px;
   position: relative;
   padding: 10px;
 }
@@ -64,7 +64,9 @@ background-attachment: fixed;
 .header__theme-menu-button {
   font-size: var(--font-size-text);
   font-weight: var(--font-weight-default);
+  line-height: 18px;
   padding: 0 13px;
+  height: 26px;
   background: transparent;
   color: rgb(var(--color-button));
   border: 0;
@@ -239,7 +241,7 @@ background-attachment: fixed;
 
 .footer {
   height: 100vh;
-  min-height: 688px;
+  min-height: 668px;
   align-content: center;
   position: relative;
   padding: 10px;
@@ -263,7 +265,7 @@ background-attachment: fixed;
 @media (768px <= width < 1024px) {
   .header {
     grid-template-rows: 1fr 99px 1fr;
-    max-height: 1024px;
+    min-height: 1024px;
     align-items: center;
     padding: 20px 20px 20px 0px;
   }
@@ -378,7 +380,7 @@ background-attachment: fixed;
   
   .footer {
     height: 100vh;
-    max-height: 1024px;
+    min-height: 1024px;
     position: relative;
     padding: 20px;
   }
@@ -408,7 +410,7 @@ background-attachment: fixed;
     grid-auto-flow: column;
     justify-self: center;
     align-self: baseline;
-    padding: 0px;
+    padding-left: 20px;
   }
 
   .decorated-zone {
@@ -436,7 +438,6 @@ background-attachment: fixed;
 
    .header > .paragraph {
     max-width: 491px;
-    max-height: 71px;
     justify-self: end;
   }
 
@@ -517,7 +518,7 @@ background-attachment: fixed;
   }
 
   .footer {
-    max-height: 768px;
+    min-height: 768px;
     padding: 20px;
   }
   .pseudo-header {
